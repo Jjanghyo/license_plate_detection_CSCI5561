@@ -9,9 +9,9 @@ Computer Vision 5561 - Final Project
 
 | Name | Email | Role |
 |------|--------|------|
-| <Ava Cavalco> | <caval143@umn.edu> | Coordinator |
-| <Jeonghyo Kim> | <kim02607@umn.edu> | Developer |
-| <Alexandra Postolaki> | <posto022@umn.edu> | Researcher |
+| Ava Cavalco | <caval143@umn.edu> | Coordinator |
+| Jeonghyo Kim | <kim02607@umn.edu> | Developer |
+| Alexandra Postolaki | <posto022@umn.edu> | Researcher |
 
 ---
 
