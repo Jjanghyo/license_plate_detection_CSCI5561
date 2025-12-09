@@ -14,40 +14,37 @@ You will need:
 Fill in dataset paths and train parameters as needed.
 """
 
+from paddleocr import PaddleOCR
 from ultralytics import YOLO
 import cv2
 import pytesseract
 import matplotlib.pyplot as plt
-import os
 
-############################################################
+rec_engine = PaddleOCR(
+    use_angle_cls=True,
+    lang='en',
+)
+
 # 1. TRAIN YOLO LICENSE PLATE DETECTOR
-############################################################
-
 def train_yolo_detector():
-    """Train YOLOv8/YOLOv9 model on custom license plate dataset."""
+    """Train YOLOv8 model on custom license plate dataset."""
 
-    # Example: YOLOv8n
-    model = YOLO("yolov8n.pt")  # or yolov9c/yolov8s
+    model = YOLO("yolov8n.pt")
 
     # IMPORTANT: update dataset.yaml path
     model.train(
-        data="lp_dataset.yaml",  # your dataset config
+        data="lp_dataset.yaml",
         epochs=50,
         imgsz=640,
         batch=16,
         workers=4,
-        device="cpu",  # or "cpu"
+        device="cpu",  # or "cuda:0" for GPU
         name="lp_detector_v1"
     )
 
     return model
 
-
-############################################################
 # 2. INFERENCE: DETECT LICENSE PLATES
-############################################################
-
 def detect_plates(model_path, image_path):
     """Detect license plates using trained YOLO model."""
 
@@ -74,34 +71,43 @@ def detect_plates(model_path, image_path):
 
     return plates, img
 
-
-############################################################
 # 3. OCR (Tesseract or custom)
-############################################################
-
 def ocr_plate(img, box):
-    """Crop plate from image and apply OCR."""
+    """Crop plate and run PaddleOCR."""
 
     x1, y1, x2, y2 = box
     crop = img[y1:y2, x1:x2]
 
-    # Preprocess
-    gray = cv2.cvtColor(crop, cv2.COLOR_BGR2GRAY)
-    gray = cv2.resize(gray, None, fx=2, fy=2, interpolation=cv2.INTER_CUBIC)
-    gray = cv2.bilateralFilter(gray, 11, 17, 17)
+    # PaddleOCR expects BGR numpy image directly
+    result = rec_engine.predict(crop)
 
-    # OCR
-    config = "--psm 7 -c tessedit_char_whitelist=ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
-    text = pytesseract.image_to_string(gray, config=config)
-    text = ''.join([c for c in text if c.isalnum()])
+    if not result or not result[0]:
+        return "", crop
 
-    return text, gray
+    text = result[0]['rec_texts']  # recognized text only
+    print("OCR:", text)
 
+    return text, crop
+# def ocr_plate(img, box):
+#     """Crop plate from image and apply OCR."""
 
-############################################################
+#     x1, y1, x2, y2 = box
+#     crop = img[y1:y2, x1:x2]
+
+#     # Preprocess
+#     gray = cv2.cvtColor(crop, cv2.COLOR_BGR2GRAY)
+#     gray = cv2.resize(gray, None, fx=2, fy=2, interpolation=cv2.INTER_CUBIC)
+#     gray = cv2.bilateralFilter(gray, 16, 17, 17)
+
+#     # OCR
+#     config = "--psm 12 -c tessedit_char_whitelist=ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+#     text = pytesseract.image_to_string(gray, config=config)
+#     print("text ::: " +  text)
+#     text = ''.join([c for c in text if c.isalnum()])
+
+#     return text, gray
+
 # 4. TEST PIPELINE (DETECTION + OCR)
-############################################################
-
 def test_pipeline(model_path, image_path):
     plates, img = detect_plates(model_path, image_path)
 
@@ -120,19 +126,14 @@ def test_pipeline(model_path, image_path):
 
     return results
 
-
-############################################################
-# 5. EXAMPLE USAGE
-############################################################
-
 if __name__ == "__main__":
 
     # 1. TRAIN (uncomment)
-    train_yolo_detector()
+    # train_yolo_detector()
 
     # 2. TEST
-    # model = "runs/detect/lp_detector_v1/weights/best.pt"
-    # outputs = test_pipeline(model, "car_sample.jpg")
-    # print("Detected plate numbers:", outputs)
+    model = "runs/detect/lp_detector_v12/weights/best.pt"
+    outputs = test_pipeline(model, "car_sample.jpg")
+    print("Detected plate numbers:", outputs)
 
     pass
