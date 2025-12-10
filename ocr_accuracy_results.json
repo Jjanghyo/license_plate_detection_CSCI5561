@@ -1,0 +1,337 @@
+{
+    "accuracy": 0.6170212765957447,
+    "average character accuracy": 0.7905184059439379,
+    "total images": 47,
+    "correct images": 29,
+    "results": [
+        {
+            "image": "test_images/car_sample.jpeg",
+            "license plate": "TN87C5106",
+            "predicted plate": "TN87C5106",
+            "correct": true,
+            "accuracy per character": 1.0
+        },
+        {
+            "image": "test_images/car_sample_2.jpg",
+            "license plate": "MUR1CAH",
+            "predicted plate": "NURICAM",
+            "correct": false,
+            "accuracy per character": 0.5714285714285714
+        },
+        {
+            "image": "test_images/car_sample_3.jpeg",
+            "license plate": "BLKJACK",
+            "predicted plate": "BLKJACK",
+            "correct": true,
+            "accuracy per character": 1.0
+        },
+        {
+            "image": "test_images/car_sample_4.jpg",
+            "license plate": "DNTBMAD",
+            "predicted plate": "ONTBMAD",
+            "correct": false,
+            "accuracy per character": 0.8571428571428571
+        },
+        {
+            "image": "test_images/car_sample_5.jpg",
+            "license plate": "390821",
+            "predicted plate": "390821",
+            "correct": true,
+            "accuracy per character": 1.0
+        },
+        {
+            "image": "test_images/car_sample_6.jpg",
+            "license plate": "FRPP870",
+            "predicted plate": "FRPP870",
+            "correct": true,
+            "accuracy per character": 1.0
+        },
+        {
+            "image": "test_images/car_sample_7.jpg",
+            "license plate": "B2228HM",
+            "predicted plate": "2228HM",
+            "correct": false,
+            "accuracy per character": 0.2857142857142857
+        },
+        {
+            "image": "test_images/car_sample_8.jpg",
+            "license plate": "51F52506",
+            "predicted plate": "51F52506",
+            "correct": true,
+            "accuracy per character": 1.0
+        },
+        {
+            "image": "test_images/car_sample_9.jpg",
+            "license plate": "GTT6606",
+            "predicted plate": "",
+            "correct": false,
+            "accuracy per character": 0.0
+        },
+        {
+            "image": "test_images/car_sample_10.jpg",
+            "license plate": "6771RY89",
+            "predicted plate": "6771RY8",
+            "correct": false,
+            "accuracy per character": 0.875
+        },
+        {
+            "image": "test_images/car_sample_11.jpg",
+            "license plate": "990TD",
+            "predicted plate": "990T0",
+            "correct": false,
+            "accuracy per character": 0.8
+        },
+        {
+            "image": "test_images/car_sample_12.jpg",
+            "license plate": "WB04D1615",
+            "predicted plate": "WB04D161",
+            "correct": false,
+            "accuracy per character": 0.8888888888888888
+        },
+        {
+            "image": "test_images/car_sample_13.jpg",
+            "license plate": "YK65XHP",
+            "predicted plate": "YK65XHP",
+            "correct": true,
+            "accuracy per character": 1.0
+        },
+        {
+            "image": "test_images/car_sample_14.jpg",
+            "license plate": "DDKY612",
+            "predicted plate": "KY612",
+            "correct": false,
+            "accuracy per character": 0.0
+        },
+        {
+            "image": "test_images/car_sample_16.jpg",
+            "license plate": "60MPR",
+            "predicted plate": "60MPR",
+            "correct": true,
+            "accuracy per character": 1.0
+        },
+        {
+            "image": "test_images/car_sample_17.jpg",
+            "license plate": "LL009SR",
+            "predicted plate": "LL009S",
+            "correct": false,
+            "accuracy per character": 0.8571428571428571
+        },
+        {
+            "image": "test_images/car_sample_18.jpg",
+            "license plate": "30G00306",
+            "predicted plate": "30G00306",
+            "correct": true,
+            "accuracy per character": 1.0
+        },
+        {
+            "image": "test_images/car_sample_19.jpg",
+            "license plate": "30G00306",
+            "predicted plate": "30G00306",
+            "correct": true,
+            "accuracy per character": 1.0
+        },
+        {
+            "image": "test_images/car_sample_20.jpg",
+            "license plate": "HVT1972",
+            "predicted plate": "HVT1972",
+            "correct": true,
+            "accuracy per character": 1.0
+        },
+        {
+            "image": "test_images/car_sample_21.jpg",
+            "license plate": "BP199SN",
+            "predicted plate": "BP199SN",
+            "correct": true,
+            "accuracy per character": 1.0
+        },
+        {
+            "image": "test_images/car_sample_22.jpg",
+            "license plate": "61LE335",
+            "predicted plate": "",
+            "correct": false,
+            "accuracy per character": 0.0
+        },
+        {
+            "image": "test_images/car_sample_24.jpg",
+            "license plate": "GT8060",
+            "predicted plate": "GT806",
+            "correct": false,
+            "accuracy per character": 0.8333333333333334
+        },
+        {
+            "image": "test_images/car_sample_25.jpg",
+            "license plate": "HH7465H",
+            "predicted plate": "HOH7465H",
+            "correct": false,
+            "accuracy per character": 0.0
+        },
+        {
+            "image": "test_images/car_sample_26.jpg",
+            "license plate": "P056374",
+            "predicted plate": "P056374",
+            "correct": true,
+            "accuracy per character": 1.0
+        },
+        {
+            "image": "test_images/car_sample_27.jpg",
+            "license plate": "782TQY",
+            "predicted plate": "782TQY",
+            "correct": true,
+            "accuracy per character": 1.0
+        },
+        {
+            "image": "test_images/car_sample_28.jpg",
+            "license plate": "51G59181",
+            "predicted plate": "51G59181",
+            "correct": true,
+            "accuracy per character": 1.0
+        },
+        {
+            "image": "test_images/car_sample_29.jpg",
+            "license plate": "EN063CX",
+            "predicted plate": "EN063CX",
+            "correct": true,
+            "accuracy per character": 1.0
+        },
+        {
+            "image": "test_images/car_sample_30.jpg",
+            "license plate": "W8NVTC",
+            "predicted plate": "W8NVTC",
+            "correct": true,
+            "accuracy per character": 1.0
+        },
+        {
+            "image": "test_images/car_sample_31.jpg",
+            "license plate": "OMG77",
+            "predicted plate": "OMG77",
+            "correct": true,
+            "accuracy per character": 1.0
+        },
+        {
+            "image": "test_images/car_sample_32.jpg",
+            "license plate": "MRSLRJ",
+            "predicted plate": "MRSLRJ",
+            "correct": true,
+            "accuracy per character": 1.0
+        },
+        {
+            "image": "test_images/car_sample_33.jpg",
+            "license plate": "FYG6962",
+            "predicted plate": "FYG6962",
+            "correct": true,
+            "accuracy per character": 1.0
+        },
+        {
+            "image": "test_images/car_sample_35.jpg",
+            "license plate": "PXL965",
+            "predicted plate": "PXL965",
+            "correct": true,
+            "accuracy per character": 1.0
+        },
+        {
+            "image": "test_images/car_sample_36.jpg",
+            "license plate": "RTBB221",
+            "predicted plate": "RTBB221",
+            "correct": true,
+            "accuracy per character": 1.0
+        },
+        {
+            "image": "test_images/car_sample_37.jpg",
+            "license plate": "64792R1",
+            "predicted plate": "64792RI",
+            "correct": false,
+            "accuracy per character": 0.8571428571428571
+        },
+        {
+            "image": "test_images/car_sample_38.jpg",
+            "license plate": "4XXF538",
+            "predicted plate": "4XXF538",
+            "correct": true,
+            "accuracy per character": 1.0
+        },
+        {
+            "image": "test_images/car_sample_39.jpg",
+            "license plate": "CSM360",
+            "predicted plate": "360",
+            "correct": false,
+            "accuracy per character": 0.0
+        },
+        {
+            "image": "test_images/car_sample_40.jpg",
+            "license plate": "CXY939",
+            "predicted plate": "636CXJ",
+            "correct": false,
+            "accuracy per character": 0.0
+        },
+        {
+            "image": "test_images/car_sample_41.jpg",
+            "license plate": "CUBA",
+            "predicted plate": "CUBA",
+            "correct": true,
+            "accuracy per character": 1.0
+        },
+        {
+            "image": "test_images/car_sample_42.jpg",
+            "license plate": "PAN256",
+            "predicted plate": "PAN256",
+            "correct": true,
+            "accuracy per character": 1.0
+        },
+        {
+            "image": "test_images/car_sample_43.jpg",
+            "license plate": "YB96",
+            "predicted plate": "YB",
+            "correct": false,
+            "accuracy per character": 0.5
+        },
+        {
+            "image": "test_images/car_sample_44.jpg",
+            "license plate": "GF5870",
+            "predicted plate": "GF5870",
+            "correct": true,
+            "accuracy per character": 1.0
+        },
+        {
+            "image": "test_images/car_sample_45.jpg",
+            "license plate": "VM080VX",
+            "predicted plate": "XA080WA",
+            "correct": false,
+            "accuracy per character": 0.42857142857142855
+        },
+        {
+            "image": "test_images/car_sample_46.jpg",
+            "license plate": "FIAT500",
+            "predicted plate": "FIAT500",
+            "correct": true,
+            "accuracy per character": 1.0
+        },
+        {
+            "image": "test_images/car_sample_47.jpg",
+            "license plate": "4320JTN",
+            "predicted plate": "4320JTN",
+            "correct": true,
+            "accuracy per character": 1.0
+        },
+        {
+            "image": "test_images/car_sample_48.jpg",
+            "license plate": "51G59181",
+            "predicted plate": "51G59181",
+            "correct": true,
+            "accuracy per character": 1.0
+        },
+        {
+            "image": "test_images/car_sample_49.jpg",
+            "license plate": "54KAD",
+            "predicted plate": "SAAAD",
+            "correct": false,
+            "accuracy per character": 0.4
+        },
+        {
+            "image": "test_images/car_sample_50.jpg",
+            "license plate": "LOSANGELES",
+            "predicted plate": "LOSANGELES",
+            "correct": true,
+            "accuracy per character": 1.0
+        }
+    ]
+}
