@@ -20,5 +20,5 @@ This repository is for the Computer Vision 5561 Fall 2025 team project.
 It includes all code, documentation, and results for our final submission.
 
 ## Project Detail - Poster
-<img width="2142" height="2500" alt="G5-poster pptx" src="https://github.com/user-attachments/assets/022e2bc8-4430-4a01-acba-c1d844b26873" />
+<img width="1500" alt="G5-poster pptx" src="https://github.com/user-attachments/assets/022e2bc8-4430-4a01-acba-c1d844b26873" />
 
